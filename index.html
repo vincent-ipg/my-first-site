@@ -7,10 +7,10 @@
 <title>Vincent's Website</title>
 <style>
 :root {
-  --bg-color: #f5f5f5;
-  --text-color: #333333;
-  --h1-color: #1F4E79;
-  --h2-color: #2E75B6;
+  --bg-color: #af69ee;
+  --text-color: #FFFFFF;
+  --h1-color: #FF7F00;
+  --h2-color: #40E0D0;
   --link-color: #0066cc;
 }
 
@@ -79,6 +79,21 @@ a { color: var(--link-color); }
 #dark-mode-toggle:checked + .theme-switch-label::after {
   transform: translateX(30px);
 }
+
+/* New Profile Photo Styling */
+.profile-photo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the photo a perfect circle */
+  object-fit: cover;  /* Prevents the image from stretching */
+  border: 3px solid var(--h2-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 </style>
 </head>
 <body>
@@ -87,7 +102,11 @@ a { color: var(--link-color); }
   <label for="dark-mode-toggle" class="theme-switch-label"></label>
 </div>
 
-<h1>Hi, I'm Vincent!</h1>
+<h1>hi hello im vincent</h1>
+<div class="profile-photo-container">
+  <img src="fih.jpg" alt="Vincent's Profile Photo" class="profile-photo">
+</div>
+
 <h2>About Me</h2>
 <p>i am lazy, but i do things only when i have to. i dont know what to write.</p>
 <h2>My Interests</h2>
